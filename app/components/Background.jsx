@@ -23,8 +23,8 @@ export default function Background () {
                 <span className='h-[200px]'><Image src={workbrew} alt="Logan Computer" width={200} height={200} /></span>
                 <span className='h-[200px]'><Image src={superreader} alt="Logan Computer" width={200} height={200} /></span>
             </div> */}
-            <div className='w-full flex flex-col md:flex-row justify-center space-y-2 md:space-x-10 p-2'>
-                <div className='w-full md:w-1/5 bg-white bg-opacity-5 dark:bg-gray-400 dark:bg-opacity-5 rounded-lg p-2'> 
+            <div className='w-full flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-10 p-2'>
+                <div className='w-full md:w-1/5 bg-white bg-opacity-5 dark:bg-gray-400 dark:bg-opacity-5 rounded-lg p-2 '> 
                     <h2 className='text-2xl text-center'>Professional</h2>
                     <p>
                         <ul className='flex justify-around mt-1'>
