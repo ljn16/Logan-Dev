@@ -41,7 +41,7 @@ const CardSlider = () => {
                 className="h-72 md:h-[50vh] rounded-lg flex flex-col justify-between items-center text-white font-bold shadow-lg p-1"
                 style={{ backgroundColor: card.color }}
             >
-                <div className=" text-2xl">{card.title}</div>
+                <div className=" text-2xl"><a href={card.link}>{card.title}</a></div>
                 <div className="text-md text-center">{card.subtitle}</div>
                 <Image 
                     src={card.image} 
