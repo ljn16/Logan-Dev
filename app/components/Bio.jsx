@@ -13,7 +13,7 @@ export default function Bio () {
             </div>
             
             <div className='w-full flex flex-col items-center justify-center'>
-                <p>I'm a full-stack developer from the midwest.</p>
+                <p>I&apos;m a full-stack developer from the midwest.</p>
                 < Technologies />
             </div>
         </div>
