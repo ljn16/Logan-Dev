@@ -14,11 +14,11 @@ import superreader from '../images/products/super-reader.png'
 
 const CardSlider = () => {
   const cards = [
-        { id: 1, title: "Reactime", subtitle: "Debug and Visualize React Apps", color: "rgba(255, 87, 51, 0.8)", image: reactime },
-        { id: 2, title: "Gia", subtitle: "Create Custom ML Models", color: "rgba(128, 0, 128, 0.8)", image: gia },
-        { id: 3, title: "Cogntor", subtitle: "Measure Attention", color: "rgba(51, 255, 87, 0.8)", image: cogntor },
-        { id: 4, title: "Work Brew", subtitle: "Find Cafes - measure and filter for sound, wifi speed", color: "rgba(51, 87, 255, 0.8)", image: workbrew },
-        { id: 5, title: "Super Reader", subtitle: "Reading - ADHD | Dyslexia", color: "rgba(243, 255, 51, 0.8)", image: superreader },
+        { id: 1, title: "Reactime", subtitle: "Debug and Visualize React Apps", color: "rgba(255, 87, 51, 0.8)", image: reactime, link: 'https://github.com/open-source-labs/Reactime' },
+        { id: 2, title: "Gia", subtitle: "Create Custom ML Models", color: "rgba(128, 0, 128, 0.8)", image: gia, link: 'https://github.com/ljn16/Gia' },
+        { id: 3, title: "Cogntor", subtitle: "Measure Attention", color: "rgba(51, 255, 87, 0.8)", image: cogntor, link: 'https://github.com/ljn16/Cogntor--s' },
+        { id: 4, title: "Work Brew", subtitle: "Find Cafes - measure and filter for sound, wifi speed", color: "rgba(51, 87, 255, 0.8)", image: workbrew, link: 'https://github.com/Work-Brew-Inc/Work-Brew' },
+        { id: 5, title: "Super Reader", subtitle: "Reading - ADHD | Dyslexia", color: "rgba(243, 255, 51, 0.8)", image: superreader},
   ];
 
   return (
