@@ -14,66 +14,46 @@ import superreader from '../images/products/super-reader.png'
 
 const CardSlider = () => {
   const cards = [
-        { id: 1, title: "Reactime", subtitle: "Time-travel debugging", color: "rgba(255, 87, 51, 0.9)", image: reactime },
-        { id: 2, title: "Gia", subtitle: "Graphical interface analysis", color: "rgba(128, 0, 128, 0.9)", image: gia },
-        { id: 3, title: "Cogntor", subtitle: "Cognitive tutor", color: "rgba(51, 255, 87, 0.9)", image: cogntor },
-        { id: 4, title: "Work Brew", subtitle: "Work management tool", color: "rgba(51, 87, 255, 0.9)", image: workbrew },
-        { id: 5, title: "Super Reader", subtitle: "Reading assistant", color: "rgba(243, 255, 51, 0.9)", image: superreader },
+        { id: 1, title: "Reactime", subtitle: "Debug and Visualize React Apps", color: "rgba(255, 87, 51, 0.8)", image: reactime },
+        { id: 2, title: "Gia", subtitle: "Create Custom ML Models", color: "rgba(128, 0, 128, 0.8)", image: gia },
+        { id: 3, title: "Cogntor", subtitle: "Measure Attention", color: "rgba(51, 255, 87, 0.8)", image: cogntor },
+        { id: 4, title: "Work Brew", subtitle: "Find Cafes - measure and filter for sound, wifi speed", color: "rgba(51, 87, 255, 0.8)", image: workbrew },
+        { id: 5, title: "Super Reader", subtitle: "Reading - ADHD | Dyslexia", color: "rgba(243, 255, 51, 0.8)", image: superreader },
   ];
 
   return (
-    <div className="slider-container">
+    <div className="w-4/5">
       <Swiper
         modules={[Navigation]}
         spaceBetween={20}
-                slidesPerView={3}
+            slidesPerView={1}
+            breakpoints={{
+                1400: {
+                    slidesPerView: 2,
+                },
+            }}
         navigation
         loop={true}
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
             <div
-              className="card"
-              style={{ backgroundColor: card.color }}
+                className="h-72 md:h-[50vh] rounded-lg flex flex-col justify-between items-center text-white font-bold shadow-lg p-1"
+                style={{ backgroundColor: card.color }}
             >
-                            <div className="card-title">{card.title}</div>
-                            <div className="card-subtitle">{card.subtitle}</div>
-                            <Image src={card.image} alt={card.title} className="card-image" layout="responsive" />
+                <div className=" text-2xl">{card.title}</div>
+                <div className="text-md text-center">{card.subtitle}</div>
+                <Image 
+                    src={card.image} 
+                    alt={card.title} 
+                    width={300} 
+                    className="w-full h-5/6 rounded-lg" 
+                    // layout="responsive" 
+                />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <style jsx>{`
-        .slider-container {
-          width: 80%;
-          margin: auto;
-        }
-        .card {
-          height: 400px;
-          border-radius: 10px;
-          display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-          align-items: center;
-          font-size: 1.5rem;
-          color: white;
-          font-weight: bold;
-                    padding: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-        }
-                .card-image {
-                    max-width: 100%;
-                    max-height: 100px;
-                }
-                .card-title {
-                    margin-bottom: 10px;
-                }
-                .card-subtitle {
-                    font-size: 1rem;
-                    margin-bottom: 10px;
-                }
-      `}</style>
     </div>
   );
 };

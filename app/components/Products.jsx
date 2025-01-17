@@ -16,19 +16,6 @@ export default function Products () {
                 <h1 className='font-bold text-4xl'>Products</h1>
                 <Image src={LoganComputer} alt="Logan Computer" width={200} height={200} />
             </div>
-
-            {/* <div className='border border-red-500 border-opacity-25 w-full flex items-center justify-center'>
-                <span className='h-[200px]'><Image src={reactime} alt="Logan Computer" width={200} height={200} /></span>
-                <span className='h-[200px]'><Image src={cogntor} alt="Logan Computer" width={200} height={200} /></span>
-                <span className='h-[200px]'><Image src={workbrew} alt="Logan Computer" width={200} height={200} /></span>
-                <span className='h-[200px]'><Image src={superreader} alt="Logan Computer" width={200} height={200} /></span>
-            </div> */}
-            {/* <div className='border border-red-500 border-opacity-25 w-full flex justify-center space-x-2'>
-                <Image src={reactime} alt="Logan Computer" width={200} height={200} />
-                <Image src={cogntor} alt="Logan Computer" width={200} height={200} />
-                <Image src={workbrew} alt="Logan Computer" width={200} height={200} />
-                <Image src={superreader} alt="Logan Computer" width={200} height={200} />
-            </div> */}
             < CardSlider />
         </div>
     );

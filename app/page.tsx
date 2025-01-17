@@ -14,7 +14,7 @@ export default function Home() {
       < Bio />
       < Products />
       < Background />
-      <div className="w-4 h-[100vh] bg-white"></div>
+      {/* <div className="w-4 h-[100vh] bg-white"></div> */}
     </main>
     < Footer />
   </>);
