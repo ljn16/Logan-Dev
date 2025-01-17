@@ -40,6 +40,7 @@ export default function Background () {
                     <p>
                         <ul className='flex justify-around mt-1'>
                             <li>Wartburg College - Neuroscience</li>
+                            <li>CodeSmith</li>
                         </ul>
                     </p>
                 </div>
