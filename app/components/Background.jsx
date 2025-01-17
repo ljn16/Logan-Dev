@@ -38,7 +38,7 @@ export default function Background () {
                 <div className='w-full md:w-1/5 bg-white bg-opacity-5 dark:bg-gray-400 dark:bg-opacity-5 rounded-lg p-2'>
                     <h2 className='text-2xl text-center'>Academic</h2>
                     <p>
-                        <ul className='flex justify-around mt-1'>
+                        <ul className='flex flex-col justify-center text-center mt-1'>
                             <li>Wartburg College - Neuroscience</li>
                             <li>CodeSmith</li>
                         </ul>
