@@ -15,8 +15,8 @@ import sass from '../images/icons/sass-icon.svg'
 import tailwind from '../images/icons/tailwind-icon.svg'
 import git from '../images/icons/git-icon.svg'
 
-import fastAPI from '../images/icons/fastapi-icon.svg'
-import keras from '../images/icons/keras-icon.svg'
+import fastAPI from '../images/icons/FastAPI-icon.svg'
+import keras from '../images/icons/Keras-icon.svg'
 
 import aws from '../images/icons/aws-icon.svg'
 import css from '../images/icons/css-icon.svg'
