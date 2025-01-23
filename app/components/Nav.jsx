@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import SideNav from './sideNav';
 import github from '../images/icons/github-icon.png'
-import linkedin from '../images/icons/linkedin-icon.png'
+import linkedin from '../images/icons/linkedin-icon.svg'
 import ThemeToggle from './ThemeToggle';
 
 
