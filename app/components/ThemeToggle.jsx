@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export default function ThemeToggle() {
+export default function ThemeToggle( {isScrolled}) {
   const [theme, setTheme] = useState(() =>
     typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)')
     .matches ? 'dark' : 'light'
@@ -12,10 +12,9 @@ export default function ThemeToggle() {
     }, [theme]);
 
   return (
-    <button 
-    className='p-1 bg-gray-800 dark:bg-gray-200 rounded text-xs mr-4'
-    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      { theme === 'dark' ? '🌞' : '🌙'}
+    <button className={`hover:opacity-80 p-1 bg-gray-800 dark:text-black dark:bg-gray-200 text-xs bg-opacity-20 dark:bg-opacity-20 ${!isScrolled ? 'h-11 w-11' : 'h-8 w-8'}`}
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+        { theme === 'dark' ? '🌞' : '🌙'}
     </button>
   );
 }

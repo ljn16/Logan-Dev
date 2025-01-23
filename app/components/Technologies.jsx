@@ -10,11 +10,11 @@ import python from '../images/icons/python-icon.png'
 import nodejs from '../images/icons/nodejs-icon.png'
 import express from '../images/icons/express-icon.png'
 import next from '../images/icons/nextjs-icon.png'
-import react from '../images/icons/react-icon.png'
+import react from '../images/icons/react-icon.svg'
 import redux from '../images/icons/redux-icon.png'
 import svelte from '../images/icons/svelte-icon.png'
-import sass from '../images/icons/sass-icon.png'
-// import tailwind from '../images/icons/tailwinds-icon.png'
+import sass from '../images/icons/sass-icon.svg'
+import tailwind from '../images/icons/tailwind-icon.svg'
 import git from '../images/icons/git-icon.png'
 // import aws from '../images/icons/aws-icon.png'
 import fastAPI from '../images/icons/FastAPI-icon.png'
@@ -68,7 +68,9 @@ export default function Technologies() {
           <span className="tech">
             <Image src={keras} alt="Typescript icon" width={30} height={30} />
           </span>
-
+          <span className="tech">
+            <Image src={tailwind} alt="Typescript icon" width={30} height={30} />
+          </span>
         </div>
       {/* </div> */}
     </>
