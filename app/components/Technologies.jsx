@@ -49,7 +49,7 @@ export default function Technologies() {
       {/* <div className='md:rounded-lg mt-52 md:mt-20 md:min-w-[300px]'> */}
         {/* <h2 className='text-green-500'>Favorite Technologies</h2> */}
         {/* <div className="grid grid-cols-3 md:grid-cols-4 gap-4 p-4 border border-blue-400"> */}
-        <div className="flex space-x-4 p-10 items-center justify-center flex-wrap">
+        <div className="flex space-x-4 space-y-4 p-10 items-center justify-center flex-wrap">
           <span className="tech">
             <Image src={typescript} alt="Typescript icon" width={30} height={30} />
           </span>
